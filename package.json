@@ -17,8 +17,10 @@
     "debug": "~2.2.0",
     "express": "~4.13.4",
     "hbs": "~4.0.0",
+    "mongoose": "^4.5.3",
     "morgan": "~1.7.0",
     "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
     "passport-http-bearer": "^1.0.1",
     "serve-favicon": "~2.3.0",
     "uuid": "^2.0.2"
