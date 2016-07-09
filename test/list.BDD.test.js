@@ -5,6 +5,7 @@ var mongoose = require('../routes/mongoose');
 var user = require('../routes/user')(mongoose);
 
 describe("list测试", function () {
+
     before(function (done) {
         mongoose.connection.on('open', done);
     });
