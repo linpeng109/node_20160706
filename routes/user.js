@@ -11,7 +11,7 @@ module.exports = function (mongoose) {
         WeiXing: String
     });
 
-    const User = mongoose.model('user', userSchema);
+    const User = mongoose.model('User', userSchema);
 
     User.insert = function (user, callback) {
         user.save(callback);
