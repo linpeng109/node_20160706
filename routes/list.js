@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
             console.error.bind(console, err);
         }
         res.jsonp(result);
-    })
+    });
 });
 
 module.exports = router;

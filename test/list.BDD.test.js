@@ -19,7 +19,6 @@ describe("insert测试", function () {
     })
 })
 describe("list测试", function () {
-    this.timeout(15000);
     it("listall", function (done) {
         User.findAll(function (err, result) {
             if (err) {
