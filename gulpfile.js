@@ -106,6 +106,14 @@ gulp.task('babel', ['clean'], function () {
         .pipe(babel())
         .pipe(gulp.dest('dist'));
 });
+/**
+ * 启动node
+ */
+var server = require('gulp-develop-server');
+gulp.task('server:start',function () {
+    server.listen({path:'./bin/www'});
+})
+
 
 gulp.task('prepublish', ['nsp', 'babel']);
 gulp.task('default', ['eslint', 'mocha', 'coveralls']);
